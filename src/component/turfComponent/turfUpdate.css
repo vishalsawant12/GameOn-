@@ -1,0 +1,79 @@
+/* Container for the whole update page */
+.turf-update-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Page title */
+.turf-update-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Form styling */
+.turf-update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form label styling */
+.turf-update-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input fields styling */
+.turf-update-form input {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Submit button styling */
+.turf-update-form button {
+  padding: 12px;
+  background-color: #27ae60; /* green */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.turf-update-form button:hover {
+  background-color: #219150; /* darker green */
+  transform: translateY(-2px);
+}
+
+.turf-update-form button:disabled {
+  background-color: #95a5a6; /* grey */
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .turf-update-container {
+    margin: 20px;
+    padding: 15px;
+  }
+}

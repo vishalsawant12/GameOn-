@@ -1,0 +1,20 @@
+.background-container {
+    background-image: url('/images/bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+  }
+  .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full screen height */
+}
+
+.content {
+  flex: 1; /* pushes footer to bottom */
+}
+
+footer {
+  margin-top: auto;
+}

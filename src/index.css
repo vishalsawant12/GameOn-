@@ -1,0 +1,8 @@
+.background-container {
+    background-image: url('/images/bgImg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    position: fixed;
+  }

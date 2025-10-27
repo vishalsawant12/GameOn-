@@ -1,0 +1,103 @@
+/* Container for the turf list */
+.turf-list-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid for turf cards */
+.turf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual turf card */
+.turf-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover effect for turf card */
+.turf-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Turf image container */
+.turf-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.turf-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Turf info section */
+.turf-info {
+  padding: 15px;
+}
+
+.turf-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.turf-info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Buttons */
+.book-btn,
+.edit-btn {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 15px 15px 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Book Now button style */
+.book-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.book-btn:hover {
+  background-color: #218838;
+}
+
+/* Edit Turf button style */
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0069d9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .turf-grid {
+    grid-template-columns: 1fr;
+  }
+}

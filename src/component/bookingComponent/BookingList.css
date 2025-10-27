@@ -1,0 +1,92 @@
+/* Basic table styling */
+.booking-table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header style */
+.booking-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+/* Row styling for zebra effect */
+.booking-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+.booking-table tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Column style */
+.booking-table td {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Make the table responsive on smaller screens */
+@media screen and (max-width: 768px) {
+  .booking-table {
+    border: 0;
+  }
+
+  .booking-table thead {
+    display: none; /* Hide headers on small screens */
+  }
+
+  .booking-table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .booking-table td {
+    display: block;
+    text-align: right;
+    padding-left: 50%; /* Adjusting for readability */
+    position: relative;
+  }
+
+  .booking-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .booking-table td:first-child {
+    padding-top: 15px;
+  }
+
+  .booking-table td:last-child {
+    padding-bottom: 15px;
+  }
+}
+
+/* Styling for error and "no bookings" messages */
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.no-bookings {
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: 600;
+}
